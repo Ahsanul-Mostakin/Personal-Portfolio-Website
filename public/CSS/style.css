@@ -34,90 +34,6 @@
     width: 100%;
 }
 
-
-@media (max-width: 768px) { 
-    .header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul.left-menu, .navbar ul.right-menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul.left-menu li, .navbar ul.right-menu li {
-        margin-bottom: 10px;
-    }
-
-    .main {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 480px) { 
-    .header {
-        padding: 0 10px;
-    }
-
-    .navbar {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul.left-menu, .navbar ul.right-menu {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar ul.right-menu li {
-        margin-bottom: 5px;
-    }
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.body {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
-.header {
-    background-color: #111;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    z-index: 1;
-}
-
-.main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .left-menu {
     display: flex;
     align-items: center;
@@ -300,7 +216,8 @@ section.project {
 }
 
 
-@keyframes colorChange {
+
+@keyframes colorChange { 
     0% {
         color: #3498db;
     }
@@ -393,14 +310,13 @@ section.project {
     }
 }
 
-
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
 body {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -462,6 +378,7 @@ body {
     border-bottom: 3px solid #3498db;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Project Section */
 .section {
